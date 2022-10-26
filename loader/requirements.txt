@@ -1,0 +1,4 @@
+click
+csvkit
+psycopg2
+pandas
