@@ -59,7 +59,6 @@ class CsvLoader():
 def load():
     """Simple program to load files into our DB."""
     click.echo(f"Loading data sets!")
-    # CsvLoader().load_zip_code_data()
     CsvLoader().load_institution_data()
     CsvLoader().load_program_data()
     click.echo("All Done!")
