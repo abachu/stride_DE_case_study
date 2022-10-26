@@ -169,28 +169,8 @@ def main():
     plist50_df, top_cs_institutions, top_10_cities_w_top_programs, dte_df = read_data.preprocessing(conn=connection)
 
 
-    # states_df = pd.read_sql_table(
-    #     "zip_code_data", conn)
-    # # TODO: Order states east-to-west
-    # zip_by_state_df = (
-    #     states_df.groupby("State")["State"]
-    #     .count()
-    #     .reset_index(name="Total Number of Zipcodes")
-    # )
-    # zip_by_state_chart = (
-    #     alt.Chart(zip_by_state_df)
-    #     .mark_circle()
-    #     .encode(x="State:N", y="Total Number of Zipcodes:Q")
-    # )
-
-
-
-
     # TODO: Render Stride logo
     st.title("Stride Funding - Data Engineering")
-    # st.write("## Zipcodes by State")
-    # st.altair_chart(zip_by_state_chart, use_container_width=True)
-    # st.table(zip_by_state_df)
     st.write("## Top Program List")
     st.table(plist50_df)
     st.write("## Top CS Institutions")
