@@ -3,4 +3,3 @@ psycopg2
 SQLAlchemy==1.4.28
 streamlit
 pandas
-streamlit-aggrid
